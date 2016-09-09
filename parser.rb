@@ -9,11 +9,11 @@ module Parser
   BASE_MUSEUM_URL = "https://data.cityofnewyork.us/resource/fn6f-htvy.json"
 
   def self.parse(user_zip, activity)
-    BASE_URL = activitize(activity)
+    base_url = activitize(activity)
     query_param = zipform(activity)
 
 
-    json_string_response = open(BASE_URL + query_param + user_zip).read
+    json_string_response = open(base_url + query_param + user_zip).read
 
     ruby_hash_response = JSON.parse(json_string_response)
 
@@ -41,3 +41,4 @@ module Parser
 end
 
 # later: if the json_string_response is empty, try to read in a less specific zip
+# p Parser.parse('10471', 'park')

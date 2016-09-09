@@ -1,9 +1,9 @@
 class Park
 
-  attr_reader :address, :name, :zip
+  attr_reader :location, :name, :zip
 
   def initialize(args)
-    @address = args.fetch('address')
+    @location = args.fetch('location')
     @name = args.fetch('signname')
     @zip = args.fetch('zipcode')
   end
