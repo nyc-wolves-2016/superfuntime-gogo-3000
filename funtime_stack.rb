@@ -1,5 +1,3 @@
-require 'pry'
-
 class FuntimeStack
 
   attr_accessor :treats, :museums, :parks
@@ -11,17 +9,11 @@ class FuntimeStack
   end
 
   def select_rand
-    #binding.pry
     self.treats = [Treat.new('dba' => 'Sorry no place', 'street' => 'We dont exist', 'zipcode' => 'We no exist too')] if treats == []
     self.museums = [Museum.new('name' => 'Sorry no place', 'adress1' => 'We dont exist', 'zip' => 'We no exist too')] if museums == []
     self.parks = [Park.new('signname' => 'Sorry no place', 'location' => 'We dont exist', 'zipcode' => 'We no exist too')] if parks == []
     
-
     [museums.sample, parks.sample, treats.sample]
   end
 
 end
-
-# args = {museums: [], parks: []}
-
-# later: add selected_things ary to keep track of prior selections

@@ -23,6 +23,9 @@ class Controller
   end
 
   def run
+
+    view.welcome
+
     user_zip = view.get_zip
 
     museums_ary = parser.parse(prepare_museum_url(user_zip)).map do |museum_args|
