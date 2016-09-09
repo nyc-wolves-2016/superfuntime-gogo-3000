@@ -9,10 +9,11 @@ class FuntimeStack
   end
 
   def select_rand
-    treats = [Treat.new('dba' => 'Sorry no place', 'street' => 'We dont exist', 'zipcode' => 'We no exist too')] if treats == nil
-    museums = [Museum.new('name' => 'Sorry no place', 'adress1' => 'We dont exist', 'zip' => 'We no exist too')] if museums == nil
-    parks = [Park.new('signname' => 'Sorry no place', 'location' => 'We dont exist', 'zipcode' => 'We no exist too')] if parks == nil
-    
+    # still working on this section
+    # treats = [Treat.new('dba' => 'Sorry no place', 'street' => 'We dont exist', 'zipcode' => 'We no exist too')] if treats == nil
+    # museums = [Museum.new('name' => 'Sorry no place', 'adress1' => 'We dont exist', 'zip' => 'We no exist too')] if museums == nil
+    # parks = [Park.new('signname' => 'Sorry no place', 'location' => 'We dont exist', 'zipcode' => 'We no exist too')] if parks == nil
+
 
     [museums.sample, parks.sample, treats.sample]
   end

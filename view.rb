@@ -1,7 +1,18 @@
 module View
 
+  def self.welcome
+    puts "*"*50
+    puts ""
+    puts "Welcome to the SuperFunTimeGoGo3000(tm)"
+    puts ""
+    puts "Your one-stop, weekend plan suggestion engine"
+    puts ""
+    puts "*"*50
+    puts ""
+  end
+
   def self.get_zip
-    puts "Enter your zip =D"
+    puts "Please enter your zip: =D"
     zip = gets.chomp
   end
 
